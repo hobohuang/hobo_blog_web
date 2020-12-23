@@ -1,12 +1,16 @@
 <template>
-  <h1>hobo博客</h1>
-  <router-view />
+  <div id="app">
+    <div>
+      <el-button type="primary">el-button</el-button>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
-import { Vue } from "vue-class-component";
-
-export default class Home extends Vue {}
+export default {
+  name: "App",
+  components: {}
+};
 </script>
 
-<style lang="scss"></style>
+<style></style>
