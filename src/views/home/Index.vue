@@ -22,7 +22,7 @@
     <div class="content">
       <div style="text-align:center">
         <h1 class="title">
-          工作一年后,下定决心，
+          工作半年后,下定决心，
           <br />
           辞职，考研！
         </h1>

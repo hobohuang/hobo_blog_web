@@ -14,8 +14,9 @@
       </div>
     </div>
     <div class="content-bottom">
-      <div>
-        <i class="fas fa-camera"></i>
+      <div class="bottom-item">
+        <i class="fas fa-clock"></i>
+        <span class="item-font">四月前</span>
       </div>
     </div>
   </div>
@@ -41,6 +42,11 @@ export default {};
     font-size: 18px;
     font-weight: 600;
     line-height: 1.6;
+    cursor: pointer;
+
+    a:hover {
+      color: #175199;
+    }
   }
   .content-inner {
     height: 105px;
@@ -51,10 +57,18 @@ export default {};
     .inner-image {
       width: 190px;
       height: 105px;
+      cursor: pointer;
     }
     .inner-article {
       height: 105px;
       width: 445px;
+
+      span {
+        cursor: pointer;
+      }
+      span:hover {
+        color: #878787;
+      }
     }
   }
   .content-bottom {
@@ -63,6 +77,18 @@ export default {};
     height: 32px;
     display: flex;
     align-items: center;
+
+    .bottom-item {
+      margin-right: 24px;
+      font-size: 14px;
+      line-height: 1;
+      color: #8590a6;
+      cursor: pointer;
+
+      .item-font {
+        margin-left: 4px;
+      }
+    }
   }
 }
 </style>

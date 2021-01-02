@@ -12,8 +12,9 @@
           <blog-aside />
         </el-aside>
       </el-container>
-      <el-footer>Footer</el-footer>
+      <el-footer>Designed and developed by hobo huang.</el-footer>
     </el-container>
+    <el-backtop :visibility-height="1000"></el-backtop>
   </div>
 </template>
 
@@ -49,8 +50,8 @@ export default {
   padding: 0;
 }
 .el-footer {
-  background-color: #b3c0d1;
-  color: #333;
+  background-color: #fff;
+  color: #666;
   text-align: center;
   line-height: 60px;
 }

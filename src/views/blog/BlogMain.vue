@@ -1,6 +1,6 @@
 <template>
   <div class="blog-main">
-    <content-item />
+    <content-item v-for="(item, index) in 10" :key="index" />
   </div>
 </template>
 
@@ -15,7 +15,7 @@ export default {
 
 <style lang="scss" scoped>
 .blog-main {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   background-color: #fff;
 }
