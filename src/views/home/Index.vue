@@ -37,7 +37,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" scoped>
 import { ref } from "vue";
 import TopNav from "@/views/home/TopNav.vue";
 

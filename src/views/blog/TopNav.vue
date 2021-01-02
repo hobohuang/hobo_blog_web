@@ -16,9 +16,10 @@ export default {};
   box-sizing: border-box;
   height: 60px;
   width: 100%;
-  min-width: 959px;
+  min-width: 100px;
   line-height: 40px;
-  padding: 10px 0;
+  padding: 10px 20px;
+  background-color: #ffffff;
   // background: red;
 
   .logo-image {

@@ -4,10 +4,13 @@
       <el-header>
         <top-nav />
       </el-header>
-      <el-container>
-        <el-aside width="200px">Aside</el-aside>
-        <el-main>Main</el-main>
-        <el-aside width="200px">Aside</el-aside>
+      <el-container class="contant-container">
+        <el-main>
+          <blog-main />
+        </el-main>
+        <el-aside width="300px">
+          <blog-aside />
+        </el-aside>
       </el-container>
       <el-footer>Footer</el-footer>
     </el-container>
@@ -16,23 +19,34 @@
 
 <script lang="ts">
 import TopNav from "@/views/blog/TopNav.vue";
+import BlogMain from "@/views/blog/BlogMain.vue";
+import BlogAside from "@/views/blog/BlogAside.vue";
 export default {
   components: {
-    TopNav
+    TopNav,
+    BlogMain,
+    BlogAside
   }
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .blog {
   height: 100%;
   min-width: 1000px;
+  background-color: #f6f6f6;
 }
 .home-container {
   height: 100%;
+
+  .contant-container {
+    width: 1000px;
+    margin: 0 auto;
+  }
 }
 .el-header {
   height: 60px;
+  padding: 0;
 }
 .el-footer {
   background-color: #b3c0d1;
@@ -42,14 +56,9 @@ export default {
 }
 
 .el-aside {
-  background-color: #d3dce6;
-  color: #333;
-  text-align: center;
+  padding: 20px 10px;
 }
-
 .el-main {
-  background-color: #e9eef3;
-  color: #333;
-  text-align: center;
+  padding: 20px 10px;
 }
 </style>
