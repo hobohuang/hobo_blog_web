@@ -2,7 +2,7 @@
   <div class="blog">
     <el-container class="home-container">
       <el-header>
-        <top-nav />
+        <!-- <top-nav /> -->
       </el-header>
       <el-container class="contant-container">
         <el-main>
@@ -19,12 +19,12 @@
 </template>
 
 <script lang="ts">
-import TopNav from "@/components/TopNav.vue";
+// import TopNav from "@/components/TopNav.vue";
 import BlogMain from "@/views/blog/BlogMain.vue";
 import BlogAside from "@/views/blog/BlogAside.vue";
 export default {
   components: {
-    TopNav,
+    // TopNav,
     BlogMain,
     BlogAside
   }

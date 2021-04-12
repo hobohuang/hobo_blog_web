@@ -1,15 +1,15 @@
 <template>
   <div class="phohograph">
-    <top-nav />
+    <!-- <top-nav /> -->
     phohograph
   </div>
 </template>
 
 <script lang="ts">
-import TopNav from "@/components/TopNav.vue";
+// import TopNav from "@/components/TopNav.vue";
 export default {
   components: {
-    TopNav
+    // TopNav
   }
 };
 </script>

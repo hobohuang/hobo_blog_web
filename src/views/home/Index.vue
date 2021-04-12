@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <top-nav />
+    <!-- <top-nav /> -->
     <div class="content">
       <div class="img-wrap">
         <div></div>
@@ -39,7 +39,7 @@
 
 <script lang="ts" scoped>
 import { ref } from "vue";
-import TopNav from "@/components/TopNav.vue";
+// import TopNav from "@/components/TopNav.vue";
 
 export default {
   setup() {
@@ -53,7 +53,7 @@ export default {
     };
   },
   components: {
-    TopNav
+    // TopNav
   }
 };
 </script>

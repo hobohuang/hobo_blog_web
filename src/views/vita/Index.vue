@@ -1,16 +1,16 @@
 <template>
   <div class="vita">
-    <top-nav />
+    <!-- <top-nav /> -->
     vita
   </div>
 </template>
 
 <script>
-import TopNav from "@/components/TopNav.vue";
+// import TopNav from "@/components/TopNav.vue";
 export default {
-  components: {
-    TopNav
-  }
+  // components: {
+  //   TopNav
+  // }
 };
 </script>
 
