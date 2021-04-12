@@ -19,7 +19,7 @@
 </template>
 
 <script lang="ts">
-import TopNav from "@/views/blog/TopNav.vue";
+import TopNav from "@/components/TopNav.vue";
 import BlogMain from "@/views/blog/BlogMain.vue";
 import BlogAside from "@/views/blog/BlogAside.vue";
 export default {

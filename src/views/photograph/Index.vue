@@ -1,7 +1,7 @@
 <template>
-  <div class="show">
+  <div class="phohograph">
     <top-nav />
-    show
+    phohograph
   </div>
 </template>
 
@@ -14,4 +14,4 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style></style>

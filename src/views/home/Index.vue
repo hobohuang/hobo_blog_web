@@ -39,7 +39,7 @@
 
 <script lang="ts" scoped>
 import { ref } from "vue";
-import TopNav from "@/views/home/TopNav.vue";
+import TopNav from "@/components/TopNav.vue";
 
 export default {
   setup() {

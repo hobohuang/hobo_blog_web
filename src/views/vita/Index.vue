@@ -1,11 +1,11 @@
 <template>
-  <div class="show">
+  <div class="vita">
     <top-nav />
-    show
+    vita
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import TopNav from "@/components/TopNav.vue";
 export default {
   components: {
@@ -14,4 +14,4 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style></style>
