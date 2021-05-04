@@ -5,7 +5,11 @@
 </template>
 
 <script lang="ts">
-export default {};
+import { defineComponent } from "node_modules/vue/dist/vue";
+
+export default defineComponent({
+  name: "blogAside"
+});
 </script>
 
 <style lang="scss" scoped>

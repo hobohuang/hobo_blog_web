@@ -22,13 +22,15 @@
 // import TopNav from "@/components/TopNav.vue";
 import BlogMain from "@/views/blog/BlogMain.vue";
 import BlogAside from "@/views/blog/BlogAside.vue";
-export default {
+import { defineComponent } from "node_modules/vue/dist/vue";
+export default defineComponent({
+  name: "blog",
   components: {
     // TopNav,
     BlogMain,
     BlogAside
   }
-};
+});
 </script>
 
 <style lang="scss" scoped>

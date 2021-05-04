@@ -1,47 +1,40 @@
 <template>
   <div class="home">
-    <!-- <top-nav /> -->
-    <div class="content">
-      <div class="img-wrap">
-        <div></div>
-        <div class="img-left"></div>
+    <div class="container">
+      <div class="sec">
+        <h3>题目一</h3>
       </div>
-      <div>
-        <h1 class="title">
-          你好，<br />
-          我是黄袁爵，<br />
-          和你一样的平凡人。
-        </h1>
-        <span class="outline">虽我长相平凡、家庭平凡,却不甘平凡。</span>
+      <div class="sec">
+        <h3>题目二</h3>
       </div>
-      <div class="img-wrap">
-        <div class="img-right"></div>
-        <div></div>
+      <div class="sec">
+        <h3>题目三</h3>
       </div>
-    </div>
-    <div class="content">
-      <div style="text-align:center">
-        <h1 class="title">
-          工作半年后,下定决心，
-          <br />
-          辞职，考研！
-        </h1>
-        <p class="outline">我不甘，只在小天地内混日子，</p>
-        <p class="outline">我不甘，一辈子做碌碌无为，</p>
-        <p class="outline">破釜沉舟，只是不甘平凡。</p>
-        <p class="outline">为了练习前端技术，</p>
-        <p class="outline">也为了展示自己，</p>
-        <p class="outline">建立了个人网站。</p>
+      <div class="sec">
+        <h3>题目四</h3>
+      </div>
+      <div class="sec">
+        <h3>题目五</h3>
+      </div>
+      <div class="sec">
+        <h3>题目六</h3>
+      </div>
+      <div class="sec">
+        <h3>题目七</h3>
+      </div>
+      <div class="sec">
+        <h3>题目八</h3>
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" scoped>
-import { ref } from "vue";
+import { defineComponent, ref } from "vue";
 // import TopNav from "@/components/TopNav.vue";
 
-export default {
+export default defineComponent({
+  name: "home",
   setup() {
     const num = ref(1);
     const prinft = () => {
@@ -55,54 +48,92 @@ export default {
   components: {
     // TopNav
   }
-};
+});
 </script>
 
 <style lang="scss" scoped>
 .home {
+  font-family: "poppins", sans-serif;
+}
+.container {
+  position: relative;
   width: 100%;
-  min-width: 999px;
+  height: 100vh;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+.sec {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  mix-blend-mode: multiply;
+  scroll-snap-align: center;
 
-  .content {
-    height: calc(100vh - 60px);
-    width: 100%;
-    font-family: "plantc", "Source Han Serif", serif;
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-    align-items: center;
-
-    .title {
-      font-weight: 700;
-      color: #404040;
-      height: max-content;
-    }
-    .outline {
-      margin-top: 20px;
-      font-weight: 700;
-      color: #999;
-      height: max-content;
-    }
-    .img-wrap {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
-
-      .img-right,
-      .img-left {
-        width: 288px;
-        height: 324px;
-        background-image: url(../../assets/img/bg1.jpg);
-        background-size: 576px 324px;
-        background-repeat: no-repeat;
-        box-shadow: 0 20px 90px 0 rgba(0, 0, 0, 0.08),
-          0 9px 30px 0 rgba(0, 0, 0, 0.1);
-      }
-      .img-right {
-        background-position-x: -288px;
-      }
-    }
+  h3 {
+    color: #000;
+    font-size: 5vw;
+    text-align: center;
   }
+}
+.sec:nth-child(1) {
+  background-image: url(../../assets/img/bg01.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+.sec:nth-child(2) {
+  background-image: url(../../assets/img/bg02.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+.sec:nth-child(3) {
+  background-image: url(../../assets/img/bg03.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+.sec:nth-child(4) {
+  background-image: url(../../assets/img/bg04.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.sec:nth-child(5) {
+  background-image: url(../../assets/img/bg05.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+.sec:nth-child(6) {
+  background-image: url(../../assets/img/bg06.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+.sec:nth-child(7) {
+  background-image: url(../../assets/img/bg07.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+.sec:nth-child(8) {
+  background-image: url(../../assets/img/bg08.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: multiply;
 }
 </style>

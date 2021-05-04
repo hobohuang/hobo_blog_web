@@ -6,11 +6,13 @@
 
 <script lang="ts">
 import ContentItem from "@/views/blog/ContentItem.vue";
-export default {
+import { defineComponent } from "node_modules/vue/dist/vue";
+export default defineComponent({
+  name: "blogMain",
   components: {
     ContentItem
   }
-};
+});
 </script>
 
 <style lang="scss" scoped>
